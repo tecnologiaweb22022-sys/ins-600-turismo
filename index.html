@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explora Bolivia | Turismo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#inicio" class="text-2xl font-bold text-green-800">
+        Explora Bolivia
+      </a>
+
+      <button id="menuBtn" class="md:hidden text-2xl" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <div id="menu" class="hidden md:flex flex-col md:flex-row
+        absolute md:static top-full left-0 w-full md:w-auto bg-white
+        md:bg-transparent p-6 md:p-0 gap-6">
+        <a href="#inicio" class="hover:text-green-700">Inicio</a>
+        <a href="#destinos" class="hover:text-green-700">Destinos</a>
+        <a href="#servicios" class="hover:text-green-700">Servicios</a>
+        <a href="#contacto" class="hover:text-green-700">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio"
+    class="min-h-[600px] flex items-center text-white bg-cover bg-center"
+    style="background-image: linear-gradient(#0008,#0008), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=80')">
+
+    <div class="container mx-auto px-6 py-20">
+      <p class="uppercase tracking-widest text-green-300 font-bold">
+        Vive la aventura
+      </p>
+
+      <h1 class="text-4xl md:text-7xl font-extrabold max-w-3xl mt-4">
+        Descubre lugares extraordinarios
+      </h1>
+
+      <p class="text-lg md:text-xl mt-6 max-w-xl">
+        Explora los paisajes, la cultura y la naturaleza de Bolivia.
+        Tu próxima aventura comienza aquí.
+      </p>
+
+      <a href="#destinos"
+        class="inline-block mt-8 bg-green-600 hover:bg-green-700
+        text-white font-bold px-8 py-4 rounded-full transition">
+        Explorar destinos →
+      </a>
+    </div>
+  </section>
+
+  <!-- Destinos -->
+  <section id="destinos" class="container mx-auto px-6 py-20">
+    <div class="text-center mb-12">
+      <p class="text-green-700 font-bold uppercase tracking-widest">
+        Nuestros lugares favoritos
+      </p>
+      <h2 class="text-3xl md:text-5xl font-bold mt-3">
+        Destinos turísticos
+      </h2>
+      <p class="text-gray-500 mt-4">
+        Descubre la belleza de nuestro país.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Destino 1 -->
+      <article class="bg-white rounded-2xl shadow-md overflow-hidden
+        hover:shadow-xl transition">
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+          alt="Paisaje natural"
+          class="w-full h-56 object-cover"
+          loading="lazy">
+
+        <div class="p-6">
+          <span class="text-sm text-green-700 font-semibold">Potosí</span>
+          <h3 class="text-2xl font-bold mt-2">Salar de Uyuni</h3>
+          <p class="text-gray-600 mt-3">
+            Maravillosos paisajes de sal, reflejos y atardeceres
+            que parecen sacados de otro planeta.
+          </p>
+          <a href="#contacto"
+            class="inline-block mt-5 text-green-700 font-bold hover:underline">
+            Más información →
+          </a>
+        </div>
+      </article>
+
+      <!-- Destino 2 -->
+      <article class="bg-white rounded-2xl shadow-md overflow-hidden
+        hover:shadow-xl transition">
+        <img
+          src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80"
+          alt="Naturaleza tropical"
+          class="w-full h-56 object-cover"
+          loading="lazy">
+
+        <div class="p-6">
+          <span class="text-sm text-green-700 font-semibold">Santa Cruz</span>
+          <h3 class="text-2xl font-bold mt-2">Naturaleza tropical</h3>
+          <p class="text-gray-600 mt-3">
+            Vive aventuras rodeado de vegetación, biodiversidad
+            y paisajes naturales impresionantes.
+          </p>
+          <a href="#contacto"
+            class="inline-block mt-5 text-green-700 font-bold hover:underline">
+            Más información →
+          </a>
+        </div>
+      </article>
+
+      <!-- Destino 3 -->
+      <article class="bg-white rounded-2xl shadow-md overflow-hidden
+        hover:shadow-xl transition">
+        <img
+          src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+          alt="Montañas de los Andes"
+          class="w-full h-56 object-cover"
+          loading="lazy">
+
+        <div class="p-6">
+          <span class="text-sm text-green-700 font-semibold">La Paz</span>
+          <h3 class="text-2xl font-bold mt-2">Los Andes</h3>
+          <p class="text-gray-600 mt-3">
+            Explora montañas, senderos y experiencias culturales
+            en el corazón de los Andes.
+          </p>
+          <a href="#contacto"
+            class="inline-block mt-5 text-green-700 font-bold hover:underline">
+            Más información →
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="bg-green-900 text-white py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-5xl font-bold">
+          Nuestros servicios
+        </h2>
+        <p class="mt-4 text-green-100">
+          Organizamos experiencias para cada tipo de viajero.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white/10 p-8 rounded-2xl text-center">
+          <div class="text-5xl">🚌</div>
+          <h3 class="text-xl font-bold mt-5">Tours guiados</h3>
+          <p class="mt-3 text-green-100">
+            Recorre destinos turísticos acompañado de guías.
+          </p>
+        </div>
+
+        <div class="bg-white/10 p-8 rounded-2xl text-center">
+          <div class="text-5xl">🏨</div>
+          <h3 class="text-xl font-bold mt-5">Hospedaje</h3>
+          <p class="mt-3 text-green-100">
+            Encuentra opciones de alojamiento para tu viaje.
+          </p>
+        </div>
+
+        <div class="bg-white/10 p-8 rounded-2xl text-center">
+          <div class="text-5xl">🗺️</div>
+          <h3 class="text-xl font-bold mt-5">Viajes personalizados</h3>
+          <p class="mt-3 text-green-100">
+            Diseñamos itinerarios según tus preferencias.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="container mx-auto px-6 py-20">
+    <div class="max-w-2xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl md:text-5xl font-bold">
+          Planifica tu viaje
+        </h2>
+        <p class="text-gray-500 mt-4">
+          Completa el formulario para consultar sobre tu próxima aventura.
+        </p>
+      </div>
+
+      <form id="contactForm" class="bg-white p-8 rounded-2xl shadow-md">
+        <label for="nombre" class="block font-semibold mb-2">
+          Nombre completo
+        </label>
+        <input id="nombre" name="nombre" type="text" required
+          placeholder="Escribe tu nombre"
+          class="w-full border rounded-lg p-3 mb-5
+          focus:outline-none focus:ring-2 focus:ring-green-600">
+
+        <label for="email" class="block font-semibold mb-2">
+          Correo electrónico
+        </label>
+        <input id="email" name="email" type="email" required
+          placeholder="correo@ejemplo.com"
+          class="w-full border rounded-lg p-3 mb-5
+          focus:outline-none focus:ring-2 focus:ring-green-600">
+
+        <label for="destino" class="block font-semibold mb-2">
+          Destino de interés
+        </label>
+        <select id="destino" name="destino" required
+          class="w-full border rounded-lg p-3 mb-5 bg-white
+          focus:outline-none focus:ring-2 focus:ring-green-600">
+          <option value="">Selecciona un destino</option>
+          <option>Salar de Uyuni</option>
+          <option>Santa Cruz</option>
+          <option>La Paz</option>
+          <option>Otro destino</option>
+        </select>
+
+        <label for="mensaje" class="block font-semibold mb-2">
+          Mensaje
+        </label>
+        <textarea id="mensaje" name="mensaje" rows="4"
+          placeholder="Cuéntanos qué viaje deseas realizar"
+          class="w-full border rounded-lg p-3 mb-5
+          focus:outline-none focus:ring-2 focus:ring-green-600"></textarea>
+
+        <button type="submit"
+          class="w-full bg-green-700 hover:bg-green-800
+          text-white font-bold py-4 rounded-lg transition">
+          Consultar por WhatsApp
+        </button>
+
+        <p id="formMessage" role="status"
+          class="text-sm text-center mt-4"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-2xl font-bold">Explora Bolivia</h2>
+      <p class="text-gray-400 mt-3">
+        Descubre el mundo, vive la aventura.
+      </p>
+      <p class="text-gray-500 text-sm mt-5">
+        © <span id="year"></span> Explora Bolivia. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Menú móvil
+    const menuBtn = document.getElementById("menuBtn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+    menu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.add("hidden");
+      });
+    });
+
+    // Año automático
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    // Formulario de WhatsApp
+    document.getElementById("contactForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      // Reemplaza por tu número real con código de país.
+      // Bolivia: 591 seguido de tu número.
+      const telefono = "591XXXXXXXXX";
+      const formMessage = document.getElementById("formMessage");
+
+      if (!/^591\d{8,9}$/.test(telefono)) {
+        formMessage.textContent =
+          "Configura tu número de WhatsApp en el código HTML.";
+        formMessage.className = "text-sm text-center mt-4 text-red-600";
+        return;
+      }
+
+      const datos = new FormData(e.currentTarget);
+
+      const mensaje =
+        "Hola, deseo información turística.\n" +
+        "Nombre: " + datos.get("nombre") + "\n" +
+        "Correo: " + datos.get("email") + "\n" +
+        "Destino: " + datos.get("destino") + "\n" +
+        "Mensaje: " + datos.get("mensaje");
+
+      window.open(
+        "https://wa.me/" + telefono + "?text=" +
+        encodeURIComponent(mensaje),
+        "_blank",
+        "noopener,noreferrer"
+      );
+    });
+  </script>
+
+</body>
+</html>
